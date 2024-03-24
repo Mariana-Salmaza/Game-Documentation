@@ -1,0 +1,72 @@
+/* 
+header {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    width: 100%;
+    justify-content: center;
+} */
+
+body {
+    color: white;
+    background-image: linear-gradient(#00000001, #00000063), url(./SpritesJogo/fundo4.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+nav a:hover {
+    color: green;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 7px, black;
+}
+
+.home-img {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    /* topo,direita,baixo.esquerda, como um relógio no sentido anti-horário */
+    margin: 5% 10% 5% 10%;
+}
+
+.space-between-sections {
+    margin: 5% 0% 0% 0%;
+}
+
+/* .preview-img img{
+    width: 50%;
+    height: 50%;
+} */
