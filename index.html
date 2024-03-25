@@ -11,39 +11,39 @@
 
 <body>
     <div class="Container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#quem-somos">Quem somos</a>
-                </li>
-                <li>
-                    <a href="#sobre-o-jogo">Sobre o jogo</a>
-                </li>
-                <li>
-                    <a href="#preview">Preview</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
+        
+        <div class="home-page">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#quem-somos">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="#sobre-o-jogo">Sobre o jogo</a>
+                    </li>
+                    <li>
+                        <a href="#preview">Preview</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <h1 class="tittle">Enemy War</h1>
 
-        <div >
-            <img class="home-img" src="./SpritesJogo/fundo3.jpg">
         </div>
     
         <main>
             <section class="space-between-sections">
                 <h2 id="quem-somos">Quem Somos</h2>
-                <ul>
-                    <li>Meu nome é Mariana Salmaza, tenho 19 anos, sou de Cianorte, mas moro em Campo Mourão há 1 ano. Sou aluna do 1º Período de TADS no Centro Universitário Integrado de Campo Mourão.<br>
-                        Venho estudando programação em casa há cerca de 1 ano. Conheci a área de tecnologia há 2 anos, quando participei de um evento online promovido por uma escola de tecnologia bem conhecida,<br>
-                        onde foi construída uma aplicação simples, porém suficiente para fazer despertar meu gosto por tecnologia.
-                    </li>
-                </ul>
+                <p class="fonte-diferente">
+                    Meu nome é Mariana Salmaza, tenho 19 anos, sou de Cianorte, mas moro em Campo Mourão há 1 ano. Sou aluna do 1º Período de TADS no Centro Universitário Integrado de Campo Mourão.<br>
+                    Venho estudando programação em casa há cerca de 1 ano. Conheci a área de tecnologia há 2 anos, quando participei de um evento online promovido por uma escola de tecnologia bem conhecida, onde foi construída uma aplicação simples, porém suficiente para fazer despertar meu gosto por tecnologia.
+                </p>
             </section>
 
             <section class="space-between-sections">
@@ -76,9 +76,8 @@
                 <h3>Elementos</h3>
                 <ul>
                     <li>Movimentação</li>
-                    <li>luta</li>
-                    <li>Ataque com espada</li>
-                    <li>Total de vidas</li>
+                    <li>Ataque corpo a corpo com espada</li>
+                    <li>Quantidade limitada de vidas</li>
                 </ul>
     
             </section>
@@ -102,6 +101,13 @@
                 </ul>
             </section>
 
+
+            <iframe class="game-embeded"src="Jogo/index.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+            <!-- <section>
+                <iframe src="./Jogo/index.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </section> -->
+
             <!-- <section class="preview-img">
                 <h3>Preview</h3>
                 <img src="./SpritesJogo/personagem.png">
@@ -109,7 +115,7 @@
 
         </main>
 
-        <footer>
+        <footer id="contato">
             <P>
                 Desenvolvido por Mariana Salmaza<br><br>
                 
