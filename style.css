@@ -2,103 +2,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
 
-/* 
+/* css reset */
+* {
+    /* retirar a margem externa */
+    margin: 0;
+    /* retirar a margem interna */
+    padding: 0;
+}
+
+
 header {
-    background-color: white;
     width: 100%;
-    box-shadow: 0 0 10px #ccc;
-    width: 100%;
-    justify-content: center;
-} */
+    height: 10%;
+    /* sombra */
+    /* box-shadow: 0 0 5px #ccc; */
+    position: fixed;
+    /* posicionar no topo */
+    top: 0;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
+    background: #FA7268;
+}
 
 body {
     color: white;
     background-image: linear-gradient(black, black);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
+    margin: 0;
+    padding-top: 60px;
+    /* tirar a barra de navegação */
+    overflow-x: hidden;
 }
 
 
-
-nav ul {
+header nav ul {
     display: flex;
     justify-content: space-between;
+    /* retirar a bolinha */
     list-style-type: none;
     align-items: center;
     padding: 20px;
-    top: 0!important;
-
 }
+
+header nav ul li {
+    /* alinhar um ao lado do outro */
+    display: inline-block;
+    margin: 0 25px;
+    /* mudar o tamanho da fonte */
+    font-size: 20px;
+    /* negrito */
+    /* font-weight: bold; */
+}
+
+
+header nav ul li a {
+    /* tirar o sublinhado */
+    text-decoration: none;
+}
+
+header:not(:hover) {
+    box-shadow: none;
+}
+
 
 nav {
     padding-top: 1px;
     margin: 0 10% 0% 10%;
     font-size: 1.4rem;
-
+    
     font-family: "Silkscreen", "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    float: right;
 }
 
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.center {
-    text-align: center;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-
-nav a:hover {
-    color: black;
-}
-
-iframe {
-    width: 100%;
-    height: 300px;
-    border: 7px, black;
-}
-
-.home-page {
-    width: 100%;
-    height: 100vh;
-
+.background {
     background-image: url(./SpritesJogo/degrade-fundo.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    text-align: center; /* Centraliza o conteúdo */
+    padding-top: 100px; 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
 }
-
-main {
-    /* topo, direita, baixo, esquerda
-    relógio no sentido anti-horário */
-    margin: 5% 10% 5% 10%;
-}
-
-.space-between-sections {
-    margin: 5% 0% 0% 0%;
-}
-
-/* .preview-img img{
-    width: 50%;
-    height: 50%;
-} */
 
 .tittle {
-    margin-top: 15%;
+    margin-top: 11%;
     display: flex;
     justify-content: center;
-
     font-family: "Honk", "Silkscreen", "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -108,15 +103,118 @@ main {
 }
 
 
-h2, h3 {
-    font-family: "Silkscreen", "Montserrat", sans-serif;    
+.center {
+    text-align: center;
 }
 
-li, .fonte-diferente {
+.grid {
+    /* aplicar a grid */
+    display: grid;
+    /* configuro as colunas */
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+.grid .coluna {
+    /* sombra */
+    box-shadow: 0 0 10px #ccc;
+    /* borda arredondada */
+    border-radius: 10px;
+    /* margem externa */
+    margin: 10px;
+}
+
+.grid .coluna img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    filter: blur(5px);
+}
+
+footer {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+/* .home-page {
+    background-image: url(./SpritesJogo/degrade-fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+} */
+
+main {
+    /* topo, direita, baixo, esquerda
+    relógio no sentido anti-horário */
+    margin: 5% 10%;
+
+}
+
+.space-between-sections {
+    margin: 5%;
+}
+
+/* .preview-img img{
+    width: 50%;
+    height: 50%;
+} */
+
+.fonte-diferente {
     font-family: "Montserrat";
 }
+
+
+
+section {
+    /* margem interna */
+    padding-top: 5x;
+    /* margem externa */
+    padding-bottom: 5px;
+    
+}
+
+
+h2, h3 {
+    font-family: "Silkscreen", "Montserrat", sans-serif;
+}
+
 
 .game-embeded {
     width: 80vw;
     height: 90vh;
+}
+
+.button {
+    padding: 10px 10px;
+    background-color: #e02bc2; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Cursor de apontar */
+}
+
+.button:hover {
+    background-color: #c91a72; /* Cor de fundo em hover */
+}
+
+html {
+    /* comportamento do scroll */
+    scroll-behavior: smooth;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 7px, solid black;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
 }

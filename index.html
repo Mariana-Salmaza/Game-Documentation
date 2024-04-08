@@ -2,42 +2,59 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site do jogo">
     <title>Enemy War</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./SpritesJogo/ícone2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous" />
     
+
 </head>
 
 <body>
-    <div class="Container">
-        
-        <div class="home-page">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#quem-somos">Quem somos</a>
-                    </li>
-                    <li>
-                        <a href="#sobre-o-jogo">Sobre o jogo</a>
-                    </li>
-                    <li>
-                        <a href="#preview">Preview</a>
-                    </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-            
-            <h1 class="tittle">Enemy War</h1>
 
+    <header>
+
+        <div class="Container">
+        
+            <div class="home-page">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="button">Home</a>
+                        
+                        </li>
+                        <li>
+                            <a href="#quem-somos" title="Quem Somos" class="button">Quem somos</a>
+                        
+                        <li>
+                            <a href="#sobre-o-jogo" title="Sobre o jogo" class="button">Sobre o jogo</a>
+                       
+                        </li>
+
+                        <li>
+                            <a href="#preview" title="Preview" class="button">Preview</a>
+                       
+                        <li>
+                            <a href="#contato" title="Contato" class="button">Contato</a>
+                        
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+                
         </div>
-    
+
+    </header>
+
+        <div class="background">
+            <h1 class="tittle">Enemy War</h1>
+        </div>
+
         <main>
+        
             <section class="space-between-sections">
                 <h2 id="quem-somos">Quem Somos</h2>
                 <p class="fonte-diferente">
@@ -48,7 +65,7 @@
 
             <section class="space-between-sections">
                 <h2 id="sobre-o-jogo">Sobre o jogo </h2>
-                <ul>
+                <ul class="fonte-diferente">
                     <li>O jogo Enemy War é um jogo de Guerra que consiste em uma única fase.</li>
                     <li>O jogo é sigleplayer.</li>
                     <li>O jogo consiste em 1 jogador, 2 inimigos e um chefe.</li>
@@ -62,9 +79,9 @@
                 
             </section>
 
-            <section>
+            <section class="space-between-sections">
                 <h3>Ficha Técnica</h3>
-                <ul>
+                <ul class="fonte-diferente">
                     <li>Engine: Construct 3 </li>
                     <li>Plataforma: PC</li>
                     <li>Mecânica: Plataforma</li>
@@ -72,9 +89,9 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="space-between-sections">
                 <h3>Elementos</h3>
-                <ul>
+                <ul class="fonte-diferente">
                     <li>Movimentação</li>
                     <li>Ataque corpo a corpo com espada</li>
                     <li>Quantidade limitada de vidas</li>
@@ -82,9 +99,9 @@
     
             </section>
 
-            <section>
+            <section class="space-between-sections">
                 <h3>Regras do jogo</h3>
-                <ul>
+                <ul class="fonte-diferente">
                     <li>Utilize as setas direita, esquerda, cima e baixo para se locomover.</li>
                     <li>Aperte a barra de espaço para fazer um ataque de espada para se defender dos inimigos.</li>
                     <li>Não deixe os inimigos relar em você para não perder as 3 vidas.</li>
@@ -93,25 +110,37 @@
 
             </section>
 
-            <section>
+            <section class="space-between-sections">
                 <h3>Personagem e inimigos</h3>
-                <ul>
+                <ul class="fonte-diferente">
                     <li>Jogador: Você</li>
                     <li>Inimigos: 2 porcos e 1 chefe.</li>
                 </ul>
             </section>
 
 
-            <iframe class="game-embeded"src="Jogo/index.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <!-- <iframe class="game-embeded"src="Jogo/index.html" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
 
             <!-- <section>
                 <iframe src="./Jogo/index.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </section> -->
 
-            <!-- <section class="preview-img">
+            <section class="preview-img">
                 <h3>Preview</h3>
-                <img src="./SpritesJogo/personagem.png">
-            </section> -->
+                <div class="grid">
+                    <div class="coluna">
+                        <img src="./personagens/jogador.png" alt="jogador" title="Jogador">
+                    </div>
+                    <div class="coluna">
+                        <img src="./personagens/porco_canhao.webp" alt="porco-canhao" title="Porco canhão">
+                    </div>
+                    <div class="coluna">
+                        <img src="./personagens/porco_patrulheiro.webp" alt="porco-patrulheiro" title="Porco patrulheiro">
+                    </div>
+                    <div class="coluna">
+                        <img src="./personagens/falador.webp" alt="falador" title="Narrador do jogo">
+                    </div>
+            </section>
 
         </main>
 
@@ -126,7 +155,7 @@
                 
             </P>
         </footer>
-    </div>
 </body>
+
 
 </html>
