@@ -32,6 +32,8 @@ body {
     padding-top: 60px;
     /* tirar a barra de navegação */
     overflow-x: hidden;
+    /* texto em negrito */
+    font-weight: 500;
 }
 
 
@@ -88,6 +90,7 @@ nav {
     height: 100vh;
     position: relative;
     z-index: 1;
+
 }
 
 .tittle {
@@ -111,8 +114,7 @@ nav {
     /* aplicar a grid */
     display: grid;
     /* configuro as colunas */
-    grid-template-columns: 25% 25% 25% 25%;
-
+    grid-template-columns: 34% 33% 33%;
 }
 
 .grid .coluna {
@@ -121,31 +123,65 @@ nav {
     /* borda arredondada */
     border-radius: 10px;
     /* margem externa */
-    margin: 10px;
+    margin: 30px;
+    width: 22rem;
+    height: 30rem;
+    font-size: medium;
+    font-weight: bold;
+   
 }
 
 .grid .coluna img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    filter: blur(5px);
+    width: 80%;
+    border-radius: 10px 10px 0 0
+
 }
 
-footer {
-    background-color: rgb(34, 33, 33);
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+.socialIcons a i {
+    font-size: 2.5rem;
     color: white;
+    /* opacity: 0.9; */
+}
+
+.footerBottom {
+    background-color: #000;
     padding: 20px;
-    box-sizing: border-box;
     text-align: center;
 }
 
+.footerBottom P{
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 1px;
+}
 
 
-/* .home-page {
-    background-image: url(./SpritesJogo/degrade-fundo.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-} */
 
 main {
     /* topo, direita, baixo, esquerda
@@ -154,14 +190,31 @@ main {
 
 }
 
-.space-between-sections {
-    margin: 5%;
+.space-between-sections, .different-space {
+    margin: 20%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 400px;
+
 }
 
-/* .preview-img img{
-    width: 50%;
-    height: 50%;
-} */
+.different-space {
+   padding-top: 100px;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.subtittle {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
 
 .fonte-diferente {
     font-family: "Montserrat";
@@ -169,24 +222,48 @@ main {
 
 
 
-section {
-    /* margem interna */
-    padding-top: 5x;
-    /* margem externa */
-    padding-bottom: 5px;
-    
-}
-
 
 h2, h3 {
     font-family: "Silkscreen", "Montserrat", sans-serif;
 }
 
+.game {
+    text-align: center;
+    padding: 100px;
+    font-size: 25px;
+    color: #f89cec;
+}
 
-.game-embeded {
+.btn {
+    background-color: #eeb7e7;
+    border: none; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 12px; 
+    margin: 2px 2px; 
+    cursor: pointer; 
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(255, 80, 240);
+}
+
+
+.preview-img {
+    text-align: center;
+    font-size: 25px;
+    padding: 100px;
+}
+
+/* .game-embeded {
     width: 80vw;
     height: 90vh;
-}
+} */
 
 .button {
     padding: 10px 10px;
@@ -207,14 +284,15 @@ html {
     scroll-behavior: smooth;
 }
 
-iframe {
+/* iframe {
     width: 100%;
     height: 300px;
     border: 7px, solid black;
-}
+} */
 
 
 a {
     color: white;
     text-decoration: none;
 }
+
