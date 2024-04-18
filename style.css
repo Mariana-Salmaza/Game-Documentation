@@ -36,20 +36,33 @@ body {
     font-weight: 500;
 }
 
+header {
+display: flex;
+justify-content: center;
+padding: 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+
+}
 
 header nav ul {
-    display: flex;
+
+    display: flex; 
     justify-content: space-between;
     /* retirar a bolinha */
     list-style-type: none;
     align-items: center;
-    padding: 20px;
+
 }
 
 header nav ul li {
     /* alinhar um ao lado do outro */
-    display: inline-block;
-    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0 15px; 
     /* mudar o tamanho da fonte */
     font-size: 20px;
     /* negrito */
@@ -76,7 +89,7 @@ nav {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    float: right;
+    float: right;   
 }
 
 .background {
@@ -92,6 +105,8 @@ nav {
     z-index: 1;
 
 }
+
+
 
 .tittle {
     margin-top: 11%;
@@ -124,7 +139,7 @@ nav {
     border-radius: 10px;
     /* margem externa */
     margin: 30px;
-    width: 22rem;
+    width: 16rem;
     height: 30rem;
     font-size: medium;
     font-weight: bold;
@@ -187,6 +202,7 @@ main {
     /* topo, direita, baixo, esquerda
     relógio no sentido anti-horário */
     margin: 5% 10%;
+    font-size: 20px;
 
 }
 
@@ -196,7 +212,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 300px;
 
 }
 
@@ -212,7 +228,20 @@ main {
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: flex-start;
 
+}
+
+.sub-subtittle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sob{ 
+   float: left;
+   color:white;
+   margin-inline-end: auto;
 }
 
 
@@ -260,13 +289,9 @@ h2, h3 {
     padding: 100px;
 }
 
-/* .game-embeded {
-    width: 80vw;
-    height: 90vh;
-} */
 
 .button {
-    padding: 10px 10px;
+    padding: 5px;
     background-color: #e02bc2; /* Cor de fundo */
     color: white; /* Cor do texto */
     text-decoration: none; /* Remover sublinhado */
@@ -284,15 +309,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* iframe {
-    width: 100%;
-    height: 300px;
-    border: 7px, solid black;
-} */
-
 
 a {
     color: white;
     text-decoration: none;
+}
+
+section ul  {
+    list-style-type: none;
 }
 
