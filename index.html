@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Site do jogo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enemy War</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./SpritesJogo/ícone.png">
@@ -18,6 +19,10 @@
 
 <body>
     <header>
+            <a href="javascript:mostrarMenu()" id="botao">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
             <nav class="mobile-menu">
                 <ul>
                     <li><a href="./index.html" class="button">Home</a></li>
@@ -28,7 +33,6 @@
                     <li><a href="#meu-game" title="Meu Game" class="button">Meu Game</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
 
@@ -161,3 +165,10 @@
 
 
 </html>
+
+<script>
+    function mostrarMenu() {
+        var menu = document.querySelector(".mobile-menu");
+        menu.classList.toggle("show");
+    }
+</script>

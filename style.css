@@ -36,6 +36,15 @@ body {
     font-weight: 500;
 }
 
+#botao i {
+    font-size: 1em;
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
 header {
 display: flex;
 justify-content: center;
@@ -93,13 +102,13 @@ nav {
 }
 
 .background {
-    background-image: url(./SpritesJogo/degrade-fundo.png);
+    background-image: url('/SpritesJogo/degrade-fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; /* Centraliza a imagem */
     text-align: center; /* Centraliza o conteúdo */
     padding-top: 100px; 
-    width: 100vw;
+    width: 105vw;
     height: 100vh;
     position: relative;
     z-index: 1;
@@ -319,3 +328,138 @@ section ul  {
     list-style-type: none;
 }
 
+@media(min-width: 320px) and (max-width: 425px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    header {
+        display: block;
+        padding: 0;
+    }
+
+    header nav ul {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+    }
+
+    nav {
+        float: none;
+        background-color: #FA7268;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    #botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 13%;
+        background-color: #FA7268;
+    }
+
+    #botao i {
+        display: block;
+    }
+    
+    .tittle {
+        font-size: 6em;
+    }
+
+    .space-between-sections, .different-space {
+        margin: 0;
+    }
+
+    .different-space h2, .sub-subtittle h3, .sob {
+        text-align: center;
+    }
+
+    .preview-img {
+        text-align: center;
+        padding: 0;
+    }
+
+   .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+
+   .game {
+        padding: 50% 0;
+   }
+
+   .btn {
+    margin: 2px 25px;
+   }
+
+   .footerContainer {
+        width: 80%;
+   }
+}
+
+@media (min-width: 425px) and (max-width: 1310px) {
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        padding: 20px;
+    }
+
+    .footerContainer {
+        width: 90%;
+   }
+}
+
+@media(min-width: 425px) and (max-width: 1110px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    header {
+        display: block;
+        padding: 0;
+    }
+
+    header nav ul {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+    }
+
+    nav {
+        float: none;
+        background-color: #FA7268;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    #botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 5% 10%;
+        background-color: #FA7268;
+    }
+
+    #botao i {
+        display: block;
+    }
+}
