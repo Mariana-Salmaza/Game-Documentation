@@ -102,7 +102,7 @@ nav {
 }
 
 .background {
-    background-image: url('/SpritesJogo/degrade-fundo.png');
+    background-image: url('./SpritesJogo/degrade-fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; /* Centraliza a imagem */
