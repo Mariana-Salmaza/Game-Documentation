@@ -19,24 +19,24 @@
 
 <body>
     <header>
-            <a href="javascript:mostrarMenu()" id="botao">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+        <a href="#" id="botao">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home" class="button">Home</a></li>
+                <li><a href="#quem-somos" class="button">Quem somos</a></li>
+                <li><a href="#sobre-o-jogo" class="button">Sobre o jogo</a></li>
+                <li><a href="#preview" class="button">Preview</a></li>
+                <li><a href="#contato" class="button">Contato</a></li>
+                <li><a href="#meu-game" class="button">Meu Game</a></li>
+            </ul>
+        </nav>
+    </header>    
 
-            <nav class="mobile-menu">
-                <ul>
-                    <li><a href="./index.html" class="button">Home</a></li>
-                    <li><a href="#quem-somos" title="Quem Somos" class="button">Quem somos</a></li>
-                    <li><a href="#sobre-o-jogo" title="Sobre o jogo" class="button">Sobre o jogo</a></li>
-                    <li><a href="#preview" title="Preview" class="button">Preview</a></li>
-                    <li><a href="#contato" title="Contato" class="button">Contato</a></li>
-                    <li><a href="#meu-game" title="Meu Game" class="button">Meu Game</a></li>
-                </ul>
-            </nav>
-    </header>
 
-
-        <div class="background">
+        <div id="home" class="background">
             <h1 class="tittle">Enemy War</h1>
 
         </div>
@@ -167,8 +167,21 @@
 </html>
 
 <script>
-    function mostrarMenu() {
-        var menu = document.querySelector(".mobile-menu");
-        menu.classList.toggle("show");
-    }
+    document.getElementById('botao').addEventListener('click', function() {
+        document.getElementById('mobileMenu').classList.toggle('show');
+    });
+
+    document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.remove('show');
+        });
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+            document.getElementById('mobileMenu').classList.remove('show');
+        }
+    });
+
+
 </script>

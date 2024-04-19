@@ -358,10 +358,10 @@ section ul  {
     #botao {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding: 13%;
         background-color: #FA7268;
+        padding: 10%;
     }
 
     #botao i {
